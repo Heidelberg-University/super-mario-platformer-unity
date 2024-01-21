@@ -9,7 +9,7 @@ using System.Reflection;
 using UnityEditor.Animations;
 
 
-public class PlayerControllerTests
+public class PlayerControllerInitializeTest
 {
     private PlayerController _playerController;
     private GameObject _gameObject;
