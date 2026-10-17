@@ -1,8 +1,7 @@
-# Unity generated folders
+# Unity generated folders. Build/ is not ignored: it holds the WebGL build that GitHub Pages serves.
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
-/[Bb]uild/
 /[Bb]uilds/
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
