@@ -23,13 +23,13 @@ A 2D Super Mario style platformer built with Unity and C# for the Master Advance
 
 | Path | Contents |
 |---|---|
-| `Assets/Scenes/` | Start, loading and level scenes |
-| `Assets/Scripts/` | Gameplay scripts, grouped into player, enemy and system scripts |
-| `Assets/` | Sprites, fonts, audio and other game assets |
-| `Packages/`, `ProjectSettings/` | Unity package manifest and project settings |
-| `index.html`, `Build/`, `TemplateData/` | WebGL build published with GitHub Pages |
-| `WebgL/` | Compressed copy of the WebGL build |
-| `html/` | Code documentation generated with Doxygen from the configuration in `Codes` |
+| [`Assets/Scenes/`](Assets/Scenes/) | Start, loading and level scenes |
+| [`Assets/Scripts/`](Assets/Scripts/) | Gameplay scripts, grouped into player, enemy and system scripts |
+| [`Assets/`](Assets/) | Sprites, fonts, audio and other game assets |
+| [`Packages/`](Packages/), [`ProjectSettings/`](ProjectSettings/) | Unity package manifest and project settings |
+| [`index.html`](index.html), [`Build/`](Build/), [`TemplateData/`](TemplateData/) | WebGL build published with GitHub Pages |
+| [`WebgL/`](WebgL/) | Compressed copy of the WebGL build |
+| [`html/`](html/) | Code documentation generated with Doxygen from the configuration in [`Codes`](Codes) |
 
 ## Getting started
 
@@ -41,9 +41,9 @@ A 2D Super Mario style platformer built with Unity and C# for the Master Advance
 python3 -m http.server 8000
 ```
 
-The copy in `WebgL/` is gzip-compressed and needs a server that sends `Content-Encoding: gzip`; see Unity's guide to [deploying compressed builds](https://docs.unity3d.com/2022.3/Documentation/Manual/webgl-deploying.html).
+The copy in [`WebgL/`](WebgL/) is gzip-compressed and needs a server that sends `Content-Encoding: gzip`; see Unity's guide to [deploying compressed builds](https://docs.unity3d.com/2022.3/Documentation/Manual/webgl-deploying.html).
 
-**Open the project.** Install Unity 2022.3.17f1 through Unity Hub, add this folder as a project, and open `Assets/Scenes/StartingScene.unity`.
+**Open the project.** Install Unity 2022.3.17f1 through Unity Hub, add this folder as a project, and open [`Assets/Scenes/StartingScene.unity`](Assets/Scenes/StartingScene.unity).
 
 ## Tech stack
 
