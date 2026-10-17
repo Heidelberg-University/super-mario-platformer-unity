@@ -1,67 +1,43 @@
-# Super Mario Practical
+# Super Mario Platformer in Unity
 
-Welcome to our Super Mario Game Development Project. This project aims to create a Super Mario-like game using the Unity engine and C# scripting. The project covers aspects such as 2D art and animations, level design, and audio design.
+A 2D Super Mario style platformer built with Unity and C# as the Computer Games Practical at Heidelberg University, with three levels, enemies, power-ups and a playable WebGL build.
 
-## Table of Contents
+| | |
+|---|---|
+| Course | Computer Games Practical |
+| University | Heidelberg University, M.Sc. Data and Computer Science |
+| Semester | Winter 2023/24 |
+| Type | Team project |
 
-- [Pre-production Phase](#pre-production-phase)
-- [Learning Phase](#learning-phase)
-- [Development Phase](#development-phase)
-- [Polishing Phase](#polishing-phase)
-- [Release Phase](#release-phase)
-- [Trello Board](#trello-board)
-- [Additional Resources](#additional-resources)
+## Features
 
-## Pre-production Phase
+- A start screen, a loading screen and three levels (`1-1`, `1-2` and `1-3`).
+- Player movement, jumping and fireballs.
+- Enemies that can be defeated by jumping on their heads, including Koopa shells that can be kicked.
+- Bricks, coin bricks, power-ups, stairways and a castle that ends each level.
+- A game manager that tracks game status and moves between scenes.
 
-This phase includes defining the game's scope, the required assets, the game's functionalities, and the project's timeframe.
+## Repository structure
 
-## Learning Phase
+| Path | Contents |
+|---|---|
+| `Assets/Scenes/` | Start, loading and level scenes |
+| `Assets/Scripts/` | Gameplay scripts, grouped into player, enemy and system scripts |
+| `Assets/` | Sprites, fonts, audio and other game assets |
+| `Packages/`, `ProjectSettings/` | Unity package manifest and project settings |
+| `WebgL/` | Playable WebGL build |
+| `html/` | Code documentation generated with Doxygen from the configuration in `Codes` |
 
-We will need to understand the basics of Unity and C# before we can start the development. Unity is the game engine we will be using and C# is the scripting language used to define game behavior.
+## Getting started
 
-## Development Phase
+**Play the WebGL build.** The build in `WebgL/` uses gzip-compressed files, so it needs a web server that sends the `Content-Encoding: gzip` header for the `.gz` files. Opening `index.html` from disk, or serving it with a plain static server, shows a parse error instead of the game. See Unity's guide to [deploying compressed builds](https://docs.unity3d.com/2022.3/Documentation/Manual/webgl-deploying.html).
 
-This is the core phase of our project where we will create our own game. It includes creating our assets (or sourcing them), implementing our functionality and testing our game.
+**Open the project.** Install Unity 2022.3.17f1 through Unity Hub, add this folder as a project, and open `Assets/Scenes/StartingScene.unity`.
 
-## Polishing Phase
+## Tech stack
 
-After our game is functionally complete, we will likely need to spend some time polishing it. This can include tweaking gameplay, fixing bugs, improving graphics and optimizing performance.
+Unity 2022.3, C#, Doxygen.
 
-## Release Phase
+## Team
 
-Once we are happy with our game, it's time to release it. This could involve publishing it to a platform like the Unity Asset Store, Google Play, or Apple's App Store.
-
-## Trello Board
-
-We use a Trello board to manage the development process. Here are the list names and their respective card names:
-
-- Pre-production Phase
-  - Game Scope
-  - Assets List
-  - Functionality
-  - Project Timeframe
-- Learning Phase
-  - Unity Basics
-  - C# Basics
-- Development Phase
-  - Asset Creation
-  - Gameplay Implementation
-  - Testing
-- Polishing Phase
-  - Gameplay Tweaks
-  - Bug Fixes
-  - Graphics and Sound Improvements
-  - Performance Optimization
-- Release Phase
-  - Preparing for Release
-  - Publishing
-
-## Additional Resources
-
-Please note that this is a high-level overview. Each step would require a detailed understanding and learning depending on the complexity of the game. There are many online tutorials, documentation and courses available to help everyone with each step of the game development process. Game development can be a complex process but it is also a lot of fun and very rewarding. If we do have any materials which can be relative for the development of the game and can be used as a reference to build this game, it can be found under this section.
-
----
-
-For questions or support, please contact us at [yaqi.gong@stud.uni-heidelberg.de] and [rishabh.tiwari@stud.uni-heilberg.de].
-
+Rishabh Tiwari and RakkiG.
